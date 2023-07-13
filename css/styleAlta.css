@@ -1,0 +1,19 @@
+.alta__formulario{
+    width: 450px;
+    display: flex;
+    padding: 92px 0px;
+    flex-direction: column;
+    gap: 16px;
+}
+.alta__formulario legend{
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+    justify-content: start;
+}
+
+@media screen and (max-width: 500px) {
+    .alta__formulario{
+        width: 300px;
+    }
+}

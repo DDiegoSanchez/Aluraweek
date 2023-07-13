@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Diego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="barra">
+            <div class="barra__principal">
+                <a href="index.html">
+                    <img class="logo" src="img/Logo.png" alt="logo aluraweek">
+                </a>
+                <div class="barra__busqueda">
+                    <input class="barra__buscador" type="text" placeholder="¿Que deseas buscar?">
+                    <img class="icon" src="img/Icone.png" alt="icono buscar">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="seccionLogin">
+            <form class="login__formulario formulario" action="">
+                <legend>Iniciar Sesión</legend>
+                <div class="formulario__campo">
+                    <label for="email">Escriba si correo electronico</label>
+                    <input id="email" type="email">
+                </div>
+                <div class="formulario__campo">
+                    <label for="password">Escriba su contraseña</label>
+                    <input id="password" type="password">
+                </div>
+                <input class="btn-azul" type="submit" value="Entrar" onclick="login()">
+            </form>
+        </section>
+        <section class="contacto">
+            <div class="contenedorContacto">
+                <div class="contacto__informacion">
+                    <img src="img/Logo.png" alt="icono AluraGeek">
+                    <ul>
+                        <li><a href="">Quines somos</a></li>
+                        <li><a href="">Politica de privacidad</a></li>
+                        <li><a href="">Programa de fidelidad</a></li>
+                        <li><a href="">Nuestras tiendas</a></li>
+                        <li><a href="">Quiero ser franquiciado</a></li>
+                        <li><a href="">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+                <form class="formulario" action="">
+                    <legend>Hable con nosotros</legend>
+                    <div class="formulario__campo">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                    <input class="btn-azul" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Dayan Diego 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

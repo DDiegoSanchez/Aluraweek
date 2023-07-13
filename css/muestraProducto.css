@@ -1,0 +1,56 @@
+.contendorProducto,
+.contendorSimilares{
+    display: flex;
+    justify-content: center;
+    background: #f5f5f5;
+}
+.muestraProducto{
+    width: 80%;
+    display: flex;
+    gap: 16px;
+    padding: 64px 0;
+    align-items: center;
+
+}
+.muestraProducto img{
+    width: 50%;
+}
+.infoProducto{
+    width: 50%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.infoProducto h2{
+    font-size: 52px;
+    font-weight: 400;
+    color: #464646;
+}
+.precioPro {
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+}
+.descripcion{
+    font-size: 16px;
+    font-weight: 400;
+    color: #464646;
+}
+
+@media screen and (max-width: 780px) {
+    .muestraProducto{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .muestraProducto{
+        flex-direction: column;
+    }
+    .muestraProducto img{
+        width: 100%;
+    }
+    .infoProducto{
+        width: 100%;
+    }
+}
