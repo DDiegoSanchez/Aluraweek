@@ -5,7 +5,6 @@
 @import url(styleProductos.css);
 @import url(styleAlta.css);
 @import url(muestraProducto.css);
-@import url(screens.css);
 *, html{
     font-family: 'Roboto', sans-serif;
 }
