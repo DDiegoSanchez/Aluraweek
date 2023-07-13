@@ -1,6 +1,6 @@
 import { productService } from "../service/product-service.js"
 
-const nuevoProducto = (nombre, imagenUrl, precio, id) => {
+const nuevoProducto = (imagenUrl,nombre,precio,id) => {
     const card = document.createElement("div")
     const contenido =
     `<div class="producto__card">

@@ -17,7 +17,8 @@ const crearProducto = (imagenUrl,categoria,nombre,precio,descripcion) =>{
             categoria,
             nombre,
             precio,
-            descripcion
+            descripcion,
+            id
             })
     }).then(respuesta => {
         if(respuesta.ok){
