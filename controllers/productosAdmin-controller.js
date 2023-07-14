@@ -10,14 +10,24 @@ const productosAdmin = (imagenUrl,categoria,nombre,precio,descripcion,id) => {
     <p class="producto__card--precio">$ ${precio}</p>
     <p>#${id}</p>
     <div class="contenedorIconos">
-        <a href=""><img class="icono" src="img/iconoEliminar.png" alt="icono eliminar"></a>
-        <a href=""><img class="icono" src="img/iconoEditar.png" alt="icono editar"></a>
+        <button type="button" id="${id}"><img class="icono" src="img/iconoEliminar.png" alt="icono eliminar"></button>
+        <a class="button" href="editarProducto.html?id=${id}"><img class="icono" src="img/iconoEditar.png" alt="icono editar"></a>
     </div>
     `
     card.classList.add("producto__card")
     card.innerHTML = contenido
     card.dataset.id = id
     
+    const btn = card.querySelector("button");
+    btn.addEventListener("click", () => {
+    const id = btn.id;
+    productService.eliminarProducto(id)
+    .then((respuesta) => {
+        console.log(respuesta);
+    })
+        .catch((err) => alert("Ocurrió un error"));
+    });
+
     return card
 }
 

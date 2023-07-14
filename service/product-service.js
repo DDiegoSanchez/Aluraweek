@@ -16,7 +16,7 @@ const crearProducto = (imagenUrl,categoria,nombre,precio,descripcion) => {
             nombre,
             precio,
             descripcion,
-            //id
+            id
             })
     })
     /*.then(respuesta => {
@@ -27,7 +27,33 @@ const crearProducto = (imagenUrl,categoria,nombre,precio,descripcion) => {
     throw new Error("No pudimos crear tu producto");*/
 }
 
+const eliminarProducto = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+      method: "DELETE",
+    });
+  };
+
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/producto/${id}`).then((respuesta) => respuesta.json()
+    );
+}
+
+const actualizarProducto = (imagenUrl,categoria,nombre,precio,descripcion, id) => {
+    return fetch(`http://localhost:3000/producto/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({imagenUrl,categoria,nombre,precio,descripcion})
+    })
+    .then(respuesta => respuesta)
+    .catch((err) => console.log(err));
+}
+
 export const productService = {
     listaProductos,
     crearProducto,
+    eliminarProducto,
+    detalleProducto,
+    actualizarProducto,
 }

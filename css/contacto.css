@@ -12,7 +12,7 @@
     justify-content: space-evenly;
 }
 .contacto__informacion{
-    width: 30%;
+    width: 50%;
     display: flex;
     gap: 100px;
 }
@@ -30,7 +30,7 @@
     color: #464646;
 }
 .formulario{
-    width: 40%;
+    width: 50%;
 }
 .formulario legend{
     font-size: 16px;
@@ -67,9 +67,11 @@
 .formulario__campo input,textarea:focus{
     outline: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
     .contenedorContacto{
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .contacto__informacion{
         width: 50%;

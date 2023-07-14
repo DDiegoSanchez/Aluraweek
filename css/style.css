@@ -27,6 +27,11 @@
     text-decoration: none;
     cursor: pointer;
 }
+button, .button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 /*productos*/
 @media screen and (max-width: 768px) {
@@ -36,25 +41,19 @@
     .linea__productos{
         width: 90%;
     }
-    .producto__card{
-        width: 22%;
-        margin: 1%;
-    }
-    .remover{
-        display: none;
-    }
-}
-@media screen and (max-width: 500px) {
     .productos{
         display: flex;
         flex-wrap: wrap;
     }
     .producto__card{
+        width: 30%;
+        margin: 1%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .producto__card{
         display: flex;
         width: 48%;
-    }
-    .remover{
-        display: none;
     }
 }
 

@@ -22,51 +22,35 @@
                     <img class="icon" src="img/Icone.png" alt="icono buscar">
                 </div>
             </div>
-            <a class="btn-blanco" href="login.html">Login</a>
+            <a class="btn-blanco" href="productos.html">Menú Administrador</a>
         </nav>
     </header>
-    <main class="contenedor">
-        <div class="hero">
-            <div class="hero__contenido">
-                <h1>Julio Promocional</h1>
-                <p>Productos selecionados con 33% de descuento</p>
-                <a class="btn-azul" href="">Ver Consolas</a>
-            </div>
-        </div>
-        <section class="contenedorProductos">
-            <section class="linea__productos">
-                <div class="inicioProductos">
-                    <h2 class="linea__productos--titulo">Star Wars</h2>
-                    <div class="verTodo">
-                        <a href="productos.html">Ver todo<img src="img/IconeBack.png" alt=""></a>
-                    </div>
+    <main>
+        <section class="seccionAltaProductos">
+            <form class="alta__formulario" data-form>
+                <legend>Editar Producto</legend>
+                <div class="formulario__campo">
+                    <label for="url">URL de la imagen</label>
+                    <input id="url" type="text" data-url>
                 </div>
-                <div class="productos" data-starwars>
-                    
+                <div class="formulario__campo">
+                    <label for="categoria">Categoria</label>
+                    <input id="categoria" type="text" data-categoria>
                 </div>
-            </section>
-            <section class="linea__productos">
-                <div class="inicioProductos">
-                    <h2 class="linea__productos--titulo">Consolas</h2>
-                    <div class="verTodo">
-                        <a href="productos.html">Ver todo<img src="img/IconeBack.png" alt=""></a>
-                    </div>
+                <div class="formulario__campo">
+                    <label for="nombre">Nombre del producto</label>
+                    <input id="nombre" type="text" data-nombre>
                 </div>
-                <div class="productos" data-consolas>
-
+                <div class="formulario__campo">
+                    <label for="precio">Precio del producto</label>
+                    <input id="precio" type="text" data-precio>
                 </div>
-            </section>
-            <section class="linea__productos">
-                <div class="inicioProductos">
-                    <h2 class="linea__productos--titulo">Diversos</h2>
-                    <div class="verTodo">
-                        <a href="productos.html">Ver todo<img src="img/IconeBack.png" alt=""></a>
-                    </div>
+                <div class="formulario__campo">
+                    <label for="descripcion">Descripcion del producto</label>
+                    <input id="descripcion" type="text" data-descripcion>
                 </div>
-                <div class="productos" data-diversos>
-                    
-                </div>
-            </section>
+                <button class="btn-azul" type="submit">Editar Producto</button>
+            </form>
         </section>
         <section class="contacto">
             <div class="contenedorContacto">
@@ -99,6 +83,6 @@
     <footer>
         <p>Desarrollado por Dayan Diego 2023</p>
     </footer>
-    <script type="module" src="/controllers/productos-controller.js"></script>
+    <script type="module" src="/controllers/actualizaProducto-controller.js"></script>
 </body>
 </html>
