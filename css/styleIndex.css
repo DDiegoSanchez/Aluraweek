@@ -1,6 +1,6 @@
 /*hero*/
 .hero{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)),url("/img/hero.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)),url("../img/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
