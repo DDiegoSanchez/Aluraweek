@@ -36,6 +36,13 @@ const mensajesDeError = {
     },
     mensaje: {
       valueMissing: "El mensaje debe tener hasta 300 caracteres",
+    },
+    email: {
+      valueMissing: "Este campo no puede estar vacio",
+      typeMismatch: "El correo no es valido",
+    },
+    password: {
+      valueMissing: "Este campo no puede estar vacio",
     }
 }
 
