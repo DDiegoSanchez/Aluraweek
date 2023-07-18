@@ -30,7 +30,7 @@
             <div class="hero__contenido">
                 <h1>Julio Promocional</h1>
                 <p>Productos selecionados con 33% de descuento</p>
-                <a class="btn-azul" href="">Ver Consolas</a>
+                <a class="btn-azul" href="#consolas">Ver Consolas</a>
             </div>
         </div>
         <section class="contenedorProductos">
@@ -45,7 +45,7 @@
                     
                 </div>
             </section>
-            <section class="linea__productos">
+            <section class="linea__productos" id="consolas">
                 <div class="inicioProductos">
                     <h2 class="linea__productos--titulo">Consolas</h2>
                     <div class="verTodo">
@@ -83,13 +83,15 @@
                 </div>
                 <form class="formulario" action="">
                     <legend>Hable con nosotros</legend>
-                    <div class="formulario__campo">
+                    <div class="formulario__campo input-container">
                         <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text">
+                        <input id="nombre" type="text" maxlength="40" required data-tipo="nombre">
+                        <span class="input-message-error">Este campo no es valido</span>
                     </div>
-                    <div class="formulario__campo">
+                    <div class="formulario__campo input-container">
                         <label for="mensaje">Escribe tu mensaje</label>
-                        <textarea id="mensaje"></textarea>
+                        <textarea id="mensaje" maxlength="120" required data-tipo="mensaje"></textarea>
+                        <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <input class="btn-azul" type="submit" value="Enviar mensaje">
                 </form>
@@ -99,6 +101,7 @@
     <footer>
         <p>Desarrollado por Dayan Diego 2023</p>
     </footer>
+    <script type="module" src="js/app.js"></script>
     <script type="module" src="/controllers/productos-controller.js"></script>
 </body>
 </html>

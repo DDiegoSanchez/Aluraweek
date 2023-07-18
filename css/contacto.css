@@ -67,6 +67,30 @@
 .formulario__campo input,textarea:focus{
     outline: none;
 }
+
+/*Validacion*/
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+  
+.input-container--invalid label {
+    color: red;
+}
+  
+.input-message-error {
+    display: none;
+}
+  
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+
 @media screen and (max-width: 1300px) {
     .contenedorContacto{
         width: 100%;
