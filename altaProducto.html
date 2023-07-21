@@ -29,25 +29,30 @@
         <section class="seccionAltaProductos">
             <form class="alta__formulario" data-form>
                 <legend>Agregar nuevo Producto</legend>
-                <div class="formulario__campo">
+                <div class="formulario__campo input-container">
                     <label for="url">URL de la imagen</label>
-                    <input id="url" type="text" data-url>
+                    <input required id="url" type="text" data-tipo="url">
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="formulario__campo">
                     <label for="categoria">Categoria</label>
-                    <input id="categoria" type="text" data-categoria>
+                    <input required id="categoria" type="text" data-tipo="categoria">
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="formulario__campo">
                     <label for="nombre">Nombre del producto</label>
-                    <input id="nombre" type="text" data-nombre>
+                    <input required id="nombre" type="text" data-tipo="nombre">
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="formulario__campo">
                     <label for="precio">Precio del producto</label>
-                    <input id="precio" type="text" data-precio>
+                    <input required id="precio" type="text" data-tipo="precio">
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="formulario__campo">
                     <label for="descripcion">Descripcion del producto</label>
-                    <input id="descripcion" type="text" data-descripcion>
+                    <input required id="descripcion" type="text" data-tipo="descripcion">
+                    <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <button class="btn-azul" type="submit">Agregar Producto</button>
             </form>
@@ -83,6 +88,7 @@
     <footer>
         <p>Desarrollado por Dayan Diego 2023</p>
     </footer>
+    <script type="module" src="js/app.js"></script>
     <script type="module" src="/controllers/crearProducto-controller.js"></script>
 </body>
 </html>

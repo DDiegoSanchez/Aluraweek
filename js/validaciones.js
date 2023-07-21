@@ -43,6 +43,18 @@ const mensajesDeError = {
     },
     password: {
       valueMissing: "Este campo no puede estar vacio",
+    },
+    url: {
+      valueMissing: "Este campo no puede estar vacio",
+    },
+    categoria:{
+      valueMissing: "El campo nombre no puede estar vacio",
+    },
+    precio:{
+      valueMissing: "El campo nombre no puede estar vacio",
+    },
+    descripcion:{
+      valueMissing: "El campo nombre no puede estar vacio",
     }
 }
 
